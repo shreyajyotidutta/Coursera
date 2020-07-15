@@ -1,0 +1,85 @@
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
+}
+
+.navbar-dark {
+  background-color: #6610f2;
+}
+
+.navbar-brand {
+  padding-right: 1.5rem;
+}
+
+#Navbar ul li span {
+  padding-right: 0.5rem;
+}
+
+.modal-header {
+  background-color: #6610f2;
+}
+
+.modal-header button.close {
+  color: #fff;
+}
+
+h4.modal-title {
+  color: #fff;
+}
+
+.modal-body {
+  background-color: #b394ec;
+}
+
+.jumbotron {
+  margin: 0 auto;
+  padding: 70px 30px;
+  background-color: #906ad6;
+}
+
+.carousel {
+  background: #512dab;
+}
+
+.carousel .carousel-item {
+  height: 300px;
+}
+
+.carousel img {
+  min-height: 300px;
+}
+
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  /* required for the pause and play button to work */
+}
+
+.row-content {
+  margin: 0 auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px;
+}
+
+.tab-content {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+.address {
+  font-size: 80%;
+  margin: 0;
+  color: #585757;
+}
+
+.footer {
+  background-color: #c4abf1;
+  margin: 0 auto;
+  padding: 20px 0px;
+}
+/*# sourceMappingURL=style.css.map */

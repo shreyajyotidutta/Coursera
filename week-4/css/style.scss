@@ -1,0 +1,94 @@
+$navbar-background: #6610f2;
+$jumbotron-background: #906ad6;
+$carousel-background: #512dab;
+$lt-gray: #ddd;
+$text-white: #fff;
+$pale-background: #b394ec;
+$carousel-item-height: 300px;
+
+
+@mixin zero-margin($pad-up-dn, $pad-left-right) {
+    margin: 0 auto;
+    padding: $pad-up-dn $pad-left-right;
+}
+
+body{
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+.navbar-dark{
+    background-color: $navbar-background;
+}
+
+.navbar-brand{
+    padding-right: 1.5rem;
+}
+
+#Navbar ul li span{
+    padding-right: 0.5rem;
+}
+
+.modal-header{
+    background-color: $navbar-background;
+}
+
+.modal-header button.close{
+    color: $text-white;
+}
+
+h4.modal-title{
+    color: $text-white;
+}
+
+.modal-body{
+    background-color: $pale-background;
+}
+
+.jumbotron{
+    @include zero-margin(70px, 30px);
+    background-color: $jumbotron-background;
+}
+
+.carousel{
+    background: $carousel-background;
+
+    .carousel-item{
+        height: $carousel-item-height;
+    }
+
+    img{
+        min-height: $carousel-item-height;
+    }
+}
+
+#carouselButton{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1; /* required for the pause and play button to work */
+}
+
+.row-content{
+    @include zero-margin(50px, 0px);
+    border-bottom: 1px ridge;
+    min-height: 400px;
+}
+
+.tab-content{
+    border-left: 1px solid $lt-gray;
+    border-right: 1px solid $lt-gray;
+    border-bottom: 1px solid $lt-gray;
+    padding: 10px;
+}
+
+.address{
+    font-size: 80%;
+    margin: 0;
+    color: #585757;
+}
+
+.footer{
+    background-color: #c4abf1;
+    @include zero-margin(20px, 0px);
+}
